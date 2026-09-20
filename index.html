@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anantha Darshini R | IT Student & Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>AD<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="wave">👋</span> Hello, I'm
+      </p>
+      <h1 class="hero-name">
+        <span class="name-line">Anantha</span>
+        <span class="name-line highlight">Darshini R</span>
+      </h1>
+      <div class="hero-typewriter">
+        <span class="static-text">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-bio">
+        IT undergraduate at <strong>Mepco Schlenk Engineering College</strong> — 
+        passionate about AI, Web Development & building solutions that matter.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/AnanthaDarshiniR-216" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:Darshiniragu216@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">AD</span>
+        </div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="float-badge badge-java"><i class="fab fa-java"></i> Java</div>
+        <div class="float-badge badge-python"><i class="fab fa-python"></i> Python</div>
+        <div class="float-badge badge-aws"><i class="fab fa-aws"></i> AWS</div>
+        <div class="float-badge badge-web"><i class="fas fa-globe"></i> Web Dev</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Anantha Darshini R</strong>, a 3rd-year Information Technology student at 
+            <strong>Mepco Schlenk Engineering College, Sivakasi</strong>, with a CGPA of 
+            <strong>7.78</strong>. I'm driven by a deep interest in <strong>AI Tools</strong> and 
+            <strong>Web Development</strong>.
+          </p>
+          <p>
+            I love turning complex problems into elegant solutions — whether it's detecting 
+            fraud using Graph Neural Networks or building a billing system with Java & DBMS. 
+            I believe in learning by doing, and every project teaches me something new.
+          </p>
+          <p>
+            Outside coding, I'm an active member of the <strong>Apti-Riders Club</strong> and 
+            <strong>Readers Club</strong>, and I speak both <strong>Tamil</strong> and <strong>English</strong>.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">7.78</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">9+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">92.4%</span>
+              <span class="stat-label">HSC Score</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>B.Tech IT · Mepco Schlenk Engineering College</p>
+              <span>2023 – 2027</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Sivakasi, Virudhunagar</p>
+              <span>Tamil Nadu, India</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-lightbulb"></i>
+            <div>
+              <h4>Interests</h4>
+              <p>AI Tools · Web Development</p>
+              <span>Always exploring new tech</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-trophy"></i>
+            <div>
+              <h4>Achievement</h4>
+              <p>Management Scholarship</p>
+              <span>₹10,000 — 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// skills</span>
+        <h2 class="section-title">What I Know</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-icon"><i class="fas fa-code"></i></span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-copyright"></i>
+              <span>C</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-pill">
+              <span class="text-icon">C++</span>
+              <span>C++</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-icon"><i class="fas fa-brain"></i></span>
+            <h3>AI & Data</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <i class="fas fa-robot"></i>
+              <span>Machine Learning</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-chart-bar"></i>
+              <span>Data Analytics</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-project-diagram"></i>
+              <span>Graph Neural Networks</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-smile"></i>
+              <span>Affective Computing</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-icon"><i class="fas fa-database"></i></span>
+            <h3>Systems & Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <i class="fas fa-database"></i>
+              <span>Database Management</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-network-wired"></i>
+              <span>Computer Networks</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-server"></i>
+              <span>Operating Systems</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="73"></div></div>
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-shield-alt"></i>
+              <span>Cyber Security</span>
+              <div class="pill-bar"><div class="pill-fill" data-width="68"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <span class="skill-icon"><i class="fas fa-users"></i></span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-skills-wrap">
+            <span class="soft-tag"><i class="fas fa-comments"></i> Communication</span>
+            <span class="soft-tag"><i class="fas fa-handshake"></i> Teamwork</span>
+            <span class="soft-tag"><i class="fas fa-clock"></i> Time Management</span>
+            <span class="soft-tag"><i class="fas fa-crown"></i> Leadership</span>
+            <span class="soft-tag"><i class="fas fa-sync-alt"></i> Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-credit-card"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/AnanthaDarshiniR-216" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="project-year">2025–2026</span>
+          <h3>Credit Card Fraud Detection</h3>
+          <p>A fraud detection system using <strong>Graph Neural Networks</strong> to identify suspicious credit card transactions by analysing relational patterns in transaction data.</p>
+          <div class="project-tags">
+            <span>Python</span><span>GNN</span><span>Machine Learning</span><span>Data Analytics</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-face-smile"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/AnanthaDarshiniR-216" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="project-year">2025–2026</span>
+          <h3>Emotion Recognition System</h3>
+          <p>A system that detects and classifies human emotions using computer vision and affective computing techniques, enabling real-time emotion analysis.</p>
+          <div class="project-tags">
+            <span>Python</span><span>AI</span><span>Affective Computing</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-receipt"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/AnanthaDarshiniR-216" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="project-year">2024–2025</span>
+          <h3>Billing System</h3>
+          <p>A full-featured billing management system built with <strong>Java</strong> and <strong>DBMS</strong>, handling invoice generation, customer records, and payment tracking.</p>
+          <div class="project-tags">
+            <span>Java</span><span>DBMS</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-route"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/AnanthaDarshiniR-216" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="project-year">2024–2025</span>
+          <h3>Edmond's Algorithm</h3>
+          <p>Implementation of <strong>Edmond's Algorithm</strong> (Blossom Algorithm) for finding maximum matchings in general graphs, demonstrating advanced graph theory concepts.</p>
+          <div class="project-tags">
+            <span>C++</span><span>Graph Theory</span><span>Algorithms</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-hdd"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/AnanthaDarshiniR-216" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="project-year">2024–2025</span>
+          <h3>Free Space Management</h3>
+          <p>An OS-level simulation of <strong>Free Space Management</strong> techniques, implementing bitmap and linked list methods for disk space allocation and deallocation.</p>
+          <div class="project-tags">
+            <span>C</span><span>Operating Systems</span><span>Memory Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section certs-section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// certifications</span>
+        <h2 class="section-title">Credentials & Learning</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-badge aws"><i class="fab fa-aws"></i></div>
+          <div class="cert-info">
+            <h4>AWS Certified AI Practitioner</h4>
+            <span class="cert-org">Amazon Web Services</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge infosys"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-info">
+            <h4>Associate in IT Foundation Skills (Java)</h4>
+            <span class="cert-org">Infosys Springboard</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge blockchain"><i class="fas fa-link"></i></div>
+          <div class="cert-info">
+            <h4>Blockchain and its Applications</h4>
+            <span class="cert-org">NPTEL</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge affective"><i class="fas fa-brain"></i></div>
+          <div class="cert-info">
+            <h4>Affective Computing</h4>
+            <span class="cert-org">NPTEL</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge nptel"><i class="fas fa-vial"></i></div>
+          <div class="cert-info">
+            <h4>Software Testing</h4>
+            <span class="cert-org">NPTEL · IIT Bangalore</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge cyber"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-info">
+            <h4>Practical Cyber Security</h4>
+            <span class="cert-org">NPTEL · IIT Kanpur</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge data"><i class="fas fa-chart-line"></i></div>
+          <div class="cert-info">
+            <h4>Data Analytics with Python</h4>
+            <span class="cert-org">NPTEL · IIT Roorkee</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge analytics"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-info">
+            <h4>Learning Analytics Tools</h4>
+            <span class="cert-org">NPTEL · IIT Bombay</span>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge game"><i class="fas fa-gamepad"></i></div>
+          <div class="cert-info">
+            <h4>Python Game Development</h4>
+            <span class="cert-org">Infosys Springboard</span>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education Timeline -->
+      <div class="section-header" style="margin-top: 5rem;">
+        <span class="section-tag">// education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023 – 2027</span>
+            <h4>B.Tech — Information Technology</h4>
+            <p>Mepco Schlenk Engineering College, Sivakasi</p>
+            <span class="timeline-score">CGPA: 7.78 (Till VI Sem)</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 – 2023</span>
+            <h4>Higher Secondary Certificate (HSC)</h4>
+            <p>V.S.K.D Matriculation Higher Secondary School, Sivakasi</p>
+            <span class="timeline-score">Score: 92.4%</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020 – 2021</span>
+            <h4>Secondary School Leaving Certificate (SSLC)</h4>
+            <p>V.S.K.D Matriculation Higher Secondary School, Sivakasi</p>
+            <span class="timeline-score">Score: 83.5%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Have a project idea or just want to say hi? My inbox is always open.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:Darshiniragu216@gmail.com">Darshiniragu216@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+918825459825">+91 8825459825</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/AnanthaDarshiniR-216" target="_blank">AnanthaDarshiniR-216</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Sivakasi, Tamil Nadu, India</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="nameInput" placeholder="Your Name" required />
+            <label for="nameInput">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="emailInput" placeholder="Your Email" required />
+            <label for="emailInput">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subjectInput" placeholder="Subject" required />
+            <label for="subjectInput">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="messageInput" placeholder="Your Message" rows="5" required></textarea>
+            <label for="messageInput">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>AD<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p>Designed & Built by <strong>Anantha Darshini R</strong></p>
+      <p class="footer-copy">© 2026 · Made with <i class="fas fa-heart" style="color:#f472b6"></i> in Tamil Nadu</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
